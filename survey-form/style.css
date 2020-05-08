@@ -1,5 +1,6 @@
 /* IMPORT ASSETS */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 /* GLOBAL VARIABLES */
 
@@ -28,6 +29,7 @@
 body {
     background-color: var(--body-background);
     background-image: var(--body-gradient);
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: top;
     justify-content: center;
@@ -43,10 +45,15 @@ header {
     color: #fff;
 }
 
+#title {
+    font-family: 'Roboto Slab', serif;
+}
+
 /* MAIN SECTION */
 
 main {
     background-color: var(--main-background);
+    color: var(--form-text);
 }
 
 /* FOOTER SECTION */
