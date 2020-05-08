@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/34a843d809.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>FCC / Responsive Web Design / A Survey Form</title>
+</head>
+<body>
+    <header>
+        <div id = "title">
+            <h1>
+                A Survey About You
+            </h1>
+        </div>
+        <div id = "description">
+            <p>
+                Thank you for taking the time to look inside yourself.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <form id = "survey-form" action = "#">
+            <div class = "name">
+                <label for = "name" id = "name-label">
+                    Name
+                    <input id = "name" type = "text" name = "name" placeholder = "What's your name?">
+                </label>
+            </div>
+            <div class="email">
+                <label for = "email" id = "email-label">
+                    Email
+                    <input id = "email" type = "email" name = "email" placeholder = "And your e-mail?" required>
+                </label>
+            </div>
+            <div class="number">
+                <label for = "number" id = "number-label">
+                    Number
+                    <input id = "number" type = "number" name = "number" min = "1" max = "10" placeholder = "What's your number?" required>
+                </label>
+            </div>
+            <div class="dropdown">
+                <label for = "dropdown" id = "dropdown-label">
+                    Dropdown
+                    <select id = "dropdown" name="dropdown">
+                            <option>Select one</option>
+                            <option value = "rockin">Rockin</option>
+                            <option value = "love">Love</option>
+                            <option value = "pizza">Pizza</option>
+                    </select>
+                </label>
+            </div>
+            <div class = "radio-buttons">
+                <label for="radio"> 
+                    <input id = "am" type = "radio" name = "radio">AM 
+                </label>
+                <label for = "radio"> 
+                    <input id = "fm" type = "radio" name = "radio">FM 
+                </label>
+                <label for = "radio"> 
+                    <input id = "ham" type = "radio" name = "radio">HAM 
+                </label>
+            </div>
+            <div class = "checkboxes">
+                <label for = "check"> 
+                    <input id = "check" value = "check" type = "checkbox" name = "checkboxes">Check 
+                </label>
+                <label for="box"> 
+                    <input id = "box" value = "box" type = "checkbox" name = "checkboxes">Box 
+                </label>
+                <label for="checkbox"> 
+                    <input id = "checkbox" value = "checkbox" type = "checkbox" name = "checkboxes">Checkbox 
+                </label>
+                <label for="pear"> 
+                    <input id = "pear" value = "pear" type = "checkbox" name = "checkboxes">Pear 
+                </label>
+            </div>
+            <div class = "textarea">
+                <label for = "comments">
+                    Comments
+                    <input id = "comments" type = "textarea" placeholder = "Anything to say?">
+                </label>
+            </div>
+            <div class = "submit-button">
+                <button id = "submit" type = "submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            Made for <a href = "https://www.freecodecamp.org/">freeCodeCamp</a> with <i class="fas fa-heart fa-xs icon"></i> by Idlir Fida, who would love for you to reach out.
+        </p>
+        <ul class = "social">
+            <li>
+                <a href = "https://goforthand.live/" target = "_blank">
+                    <i class="fas fa-link fa-sm"></i>
+                </a>
+            </li>
+            <li>
+                <a href = "https://twitter.com/idontcantwont" target = "_blank">
+                    <i class="fab fa-twitter fa-sm"></i>
+                </a>
+            </li>
+            <li>
+                <a href = "https://codepen.io/idontcantwont" target = "_blank">
+                    <i class="fab fa-codepen fa-sm"></i>
+                </a>
+            </li>
+            <li>
+                <a href = "https://github.com/idontcantwont" target = "_blank">
+                    <i class="fab fa-github fa-sm"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
