@@ -1,6 +1,17 @@
 /* IMPORT ASSETS */
 
 
+/* GLOBAL VARIABLES */
+
+:root {
+    --body-background: #acaae6;
+    --body-gradient: linear-gradient(to right, #c5c9f7, #aca9ee);
+    --header-background: #483c7c;
+    --header-gradient: linear-gradient(t0 bottom, #483c7c, #6d6095);
+    --title-text: #525253;
+    --main-background: #f8f7fc;
+    --form-text: #8a8a8c;
+}
 
 /* INITIAL RESETS */
 
@@ -15,20 +26,27 @@
 /* BODY STYLES */
 
 body {
-    background-color: tomato;
-    color: white;
+    background-color: var(--body-background);
+    background-image: var(--body-gradient);
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 100vw;
+    margin: 30px auto 60px;
 }
 
 /* HEADER SECTION */
 
 header {
-
+    background-color: var(--header-background);
+    background-image: var(--header-gradient);
+    color: #fff;
 }
 
 /* MAIN SECTION */
 
 main {
-
+    background-color: var(--main-background);
 }
 
 /* FOOTER SECTION */
@@ -59,11 +77,11 @@ footer a:hover {
 }
 
 footer p a {
-  color: yellow;
+    color: yellow;
 }
 
 footer p a:hover {
-  color: white;
+    color: white;
 }
 
 .social {

@@ -25,27 +25,27 @@
         <form id = "survey-form" action = "#">
             <div class = "name">
                 <label for = "name" id = "name-label">
-                    Name
-                    <input id = "name" type = "text" name = "name" placeholder = "What's your name?">
+                    What's your name?
+                    <input id = "name" type = "text" name = "name" placeholder = "John Doe">
                 </label>
             </div>
             <div class="email">
                 <label for = "email" id = "email-label">
-                    Email
-                    <input id = "email" type = "email" name = "email" placeholder = "And your e-mail?" required>
+                    What's your e-mail address?
+                    <input id = "email" type = "email" name = "email" placeholder = "john@doe.io" required>
                 </label>
             </div>
             <div class="number">
                 <label for = "number" id = "number-label">
-                    Number
-                    <input id = "number" type = "number" name = "number" min = "1" max = "10" placeholder = "What's your number?" required>
+                    How old are you?
+                    <input id = "number" type = "number" name = "number" min = "1" max = "200" placeholder = "36" required>
                 </label>
             </div>
             <div class="dropdown">
                 <label for = "dropdown" id = "dropdown-label">
-                    Dropdown
+                    What's your favourite thing?
                     <select id = "dropdown" name="dropdown">
-                            <option>Select one</option>
+                            <option>Pick one</option>
                             <option value = "rockin">Rockin</option>
                             <option value = "love">Love</option>
                             <option value = "pizza">Pizza</option>
@@ -53,8 +53,11 @@
                 </label>
             </div>
             <div class = "radio-buttons">
+                <p>
+                    What's your favourite type of radio?
+                </p>
                 <label for="radio"> 
-                    <input id = "am" type = "radio" name = "radio">AM 
+                    <input id = "am" type = "radio" name = "radio">AM
                 </label>
                 <label for = "radio"> 
                     <input id = "fm" type = "radio" name = "radio">FM 
@@ -64,6 +67,9 @@
                 </label>
             </div>
             <div class = "checkboxes">
+                <p>
+                    Which of these have you seen before?
+                </p>
                 <label for = "check"> 
                     <input id = "check" value = "check" type = "checkbox" name = "checkboxes">Check 
                 </label>
@@ -79,12 +85,12 @@
             </div>
             <div class = "textarea">
                 <label for = "comments">
-                    Comments
-                    <input id = "comments" type = "textarea" placeholder = "Anything to say?">
+                    Got anything to say?
+                    <input id = "comments" type = "textarea" placeholder = "Can you believe this weather!?">
                 </label>
             </div>
             <div class = "submit-button">
-                <button id = "submit" type = "submit">Submit</button>
+                <button id = "submit" type = "submit">Drop it!</button>
             </div>
         </form>
     </main>
