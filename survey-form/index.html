@@ -8,40 +8,37 @@
     <title>FCC / Responsive Web Design / A Survey Form</title>
 </head>
 <body>
-    <header>
-        <div id = "title">
-            <h1>
-                A Survey About You
-            </h1>
-        </div>
-        <div id = "description">
-            <p>
-                Thank you for taking the time to look inside yourself.
-            </p>
-        </div>
-    </header>
-
-    <main>
-        <form id = "survey-form" action = "#">
-            <div class = "name">
+    <div id = "container">
+        <header>
+            <div id = "title">
+                <h1>
+                    A Survey About You
+                </h1>
+            </div>
+            <div id = "description">
+                <p>
+                    Thank you for taking the time to look inside yourself.
+                </p>
+            </div>
+        </header>
+    
+        <main>
+            <form id = "survey-form" action = "#">
                 <label for = "name" id = "name-label">
                     What's your name?
                     <input id = "name" type = "text" name = "name" placeholder = "John Doe">
                 </label>
-            </div>
-            <div class="email">
+
                 <label for = "email" id = "email-label">
                     What's your e-mail address?
                     <input id = "email" type = "email" name = "email" placeholder = "john@doe.io" required>
                 </label>
-            </div>
-            <div class="number">
+
                 <label for = "number" id = "number-label">
                     How old are you?
-                    <input id = "number" type = "number" name = "number" min = "1" max = "200" placeholder = "36" required>
+                    <input id = "number" type = "number" name = "number" min = "1" max = "200" placeholder = "Your age.." required>
                 </label>
-            </div>
-            <div class="dropdown">
+
                 <label for = "dropdown" id = "dropdown-label">
                     What's your favourite thing?
                     <select id = "dropdown" name="dropdown">
@@ -51,53 +48,56 @@
                             <option value = "pizza">Pizza</option>
                     </select>
                 </label>
-            </div>
-            <div class = "radio-buttons">
-                <p>
-                    What's your favourite type of radio?
-                </p>
-                <label for="radio"> 
-                    <input id = "am" type = "radio" name = "radio">AM
-                </label>
-                <label for = "radio"> 
-                    <input id = "fm" type = "radio" name = "radio">FM 
-                </label>
-                <label for = "radio"> 
-                    <input id = "ham" type = "radio" name = "radio">HAM 
-                </label>
-            </div>
-            <div class = "checkboxes">
-                <p>
-                    Which of these have you seen before?
-                </p>
-                <label for = "check"> 
-                    <input id = "check" value = "check" type = "checkbox" name = "checkboxes">Check 
-                </label>
-                <label for="box"> 
-                    <input id = "box" value = "box" type = "checkbox" name = "checkboxes">Box 
-                </label>
-                <label for="checkbox"> 
-                    <input id = "checkbox" value = "checkbox" type = "checkbox" name = "checkboxes">Checkbox 
-                </label>
-                <label for="pear"> 
-                    <input id = "pear" value = "pear" type = "checkbox" name = "checkboxes">Pear 
-                </label>
-            </div>
-            <div class = "textarea">
-                <label for = "comments">
-                    Got anything to say?
-                    <input id = "comments" type = "textarea" placeholder = "Can you believe this weather!?">
-                </label>
-            </div>
-            <div class = "submit-button">
-                <button id = "submit" type = "submit">Drop it!</button>
-            </div>
-        </form>
-    </main>
+
+                <div class = "radio-buttons">
+                    <p>
+                        What's your favourite radio band?
+                    </p>
+                    <label for="radio"> 
+                        <input id = "am" type = "radio" name = "radio"><span class = "radio">AM</span>
+                    </label>
+                    <label for = "radio"> 
+                        <input id = "fm" type = "radio" name = "radio"><span class = "radio">FM</span>
+                    </label>
+                    <label for = "radio"> 
+                        <input id = "ham" type = "radio" name = "radio"><span class = "radio">HAM</span>
+                    </label>
+                </div>
+                <div class = "checkboxes">
+                    <p>
+                        Check.. some boxes?
+                    </p>
+                    <label for = "check"> 
+                        <input id = "check" value = "check" type = "checkbox" name = "checkboxes"><span class = "checkbox">Check</span>
+                    </label>
+                    <label for="box"> 
+                        <input id = "box" value = "box" type = "checkbox" name = "checkboxes"><span class = "checkbox">Box</span> 
+                    </label>
+                    <label for="checkbox"> 
+                        <input id = "checkbox" value = "checkbox" type = "checkbox" name = "checkboxes"><span class = "checkbox">Checkbox</span> 
+                    </label>
+                    <label for="pear"> 
+                        <input id = "pear" value = "pear" type = "checkbox" name = "checkboxes"><span class = "checkbox">Pear</span>
+                    </label>
+                </div>
+                <div class = "textarea">
+                    <label for = "comments">
+                        <p>
+                            Is there anything we haven't covered?
+                        </p>
+                        <textarea id = "comments" placeholder = "Write it here.."></textarea>
+                    </label>
+                </div>
+                <div class = "submit-button">
+                    <button id = "submit" type = "submit"><span>Drop it!</span></button>
+                </div>
+            </form>
+        </main>
+    </div>
 
     <footer>
         <p>
-            Made for <a href = "https://www.freecodecamp.org/">freeCodeCamp</a> with <i class="fas fa-heart fa-xs icon"></i> by Idlir Fida, who would love for you to reach out.
+            Made  with <i class="fas fa-heart fa-xs icon"></i> for <a href = "https://www.freecodecamp.org/">freeCodeCamp</a> by Idlir Fida, who would love for you to reach out.
         </p>
         <ul class = "social">
             <li>

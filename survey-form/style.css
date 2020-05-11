@@ -5,13 +5,10 @@
 /* GLOBAL VARIABLES */
 
 :root {
-    --body-background: #acaae6;
-    --body-gradient: linear-gradient(to right, #c5c9f7, #aca9ee);
-    --header-background: #483c7c;
-    --header-gradient: linear-gradient(t0 bottom, #483c7c, #6d6095);
-    --title-text: #525253;
-    --main-background: #f8f7fc;
-    --form-text: #8a8a8c;
+    --body-background: #b5bcd9;
+    --main-background: #fff;
+    --main-text: #c0c0c0;
+    --header-gradient: linear-gradient(245deg, #ec4e96, #b84ece, #43b7fc);
 }
 
 /* INITIAL RESETS */
@@ -24,54 +21,174 @@
     padding: 0;
 }
 
-/* BODY STYLES */
+/* BODY  & CONTAINER STYLES */
 
 body {
     background-color: var(--body-background);
-    background-image: var(--body-gradient);
     font-family: 'Open Sans', sans-serif;
+}
+
+#container {
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: center;
-    width: 100vw;
-    margin: 30px auto 60px;
+    flex-direction: column;
+    width: 60%;
+    min-width: 430px;
+    margin: 50px auto 120px;
+    box-shadow: 0 30px 40px 10px rgba(0, 0, 0, .23);
 }
 
 /* HEADER SECTION */
 
 header {
-    background-color: var(--header-background);
     background-image: var(--header-gradient);
     color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
 }
 
 #title {
     font-family: 'Roboto Slab', serif;
 }
 
+#description {
+    padding-top: 2%;
+}
+
 /* MAIN SECTION */
 
 main {
     background-color: var(--main-background);
-    color: var(--form-text);
+    color: var(--main-text);
+    width: 100%;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 10vw;
+}
+
+#survey-form label {
+    padding: 15px;
+}
+
+input,
+select {
+    display: block;
+    outline: none;
+}
+
+select {
+    margin-top: 10px;
+}
+
+[type = "text"],
+[type = "email"],
+[type = "number"] {
+    border: 1px solid var(--main-text);
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 20px;
+}
+
+[type = "text"],
+[type = "email"],
+[type = "number"] {
+    height: 35px;
+}
+
+label > *:focus {
+    border-color: #ec4e96;
+}
+
+#survey-form p {
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+[type = "checkbox"],
+[type = "radio"] {
+    display: inline;
+    margin-left: 10px;
+    transform: translateY(-2px) scale(.9, .9);
+}
+
+.radio,
+.checkbox {
+    padding-left: 5px;
+}
+
+#comments {
+    height: 150px;
+    width: 70%;
+    min-width: 200px;
+    margin-left: 20px;
+    outline: none;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    color: #777;
+    font-size: .8rem;
+    padding: 10px;
+    resize: none;
+}
+
+#comments:focus {
+    border-color: #ec4e96;
+}
+
+#submit {
+    display: block;
+    border-radius: 4px;
+    background-color: #45b6fb;
+    background-image: var(--header-gradient);
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+    margin: 40px auto 0px;
+    width: 60%;
+    min-width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+  
+#submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+  
+#submit:hover span {
+    transform: translateY(-5px);
 }
 
 /* FOOTER SECTION */
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
     background-color: #000;
     color: #fff;
     font-weight: 200;
+    font-size: .8rem;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
+    width: 100vw;
+    min-width: 430px;
+    position: fixed;
+    bottom: 0;
 }
 
 footer a {
@@ -93,11 +210,13 @@ footer p a:hover {
 
 .social {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social li {
     list-style-type: none;
-    margin: 15px 10px 0px;
+    margin: 10px 10px 0px;
 }
 
 .icon {
