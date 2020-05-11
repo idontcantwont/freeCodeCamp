@@ -10,23 +10,19 @@
 <body>
     <div id = "container">
         <header>
-            <div id = "title">
-                <h1>
-                    A Survey About You
-                </h1>
-            </div>
-            <div id = "description">
-                <p>
+          <h1 id = "title">
+            A Survey About You
+          </h1>
+            <p id = "description">
                     Thank you for taking the time to look inside yourself.
-                </p>
-            </div>
+            </p>
         </header>
     
         <main>
             <form id = "survey-form" action = "#">
                 <label for = "name" id = "name-label">
                     What's your name?
-                    <input id = "name" type = "text" name = "name" placeholder = "John Doe">
+                    <input id = "name" type = "text" name = "name" placeholder = "John Doe" required>
                 </label>
 
                 <label for = "email" id = "email-label">
@@ -54,20 +50,20 @@
                         What's your favourite radio band?
                     </p>
                     <label for="radio"> 
-                        <input id = "am" type = "radio" name = "radio"><span class = "radio">AM</span>
+                        <input id = "am" type = "radio" name = "radio" value = "AM"><span class = "radio">AM</span>
                     </label>
                     <label for = "radio"> 
-                        <input id = "fm" type = "radio" name = "radio"><span class = "radio">FM</span>
+                        <input id = "fm" type = "radio" name = "radio" value = "FM"><span class = "radio">FM</span>
                     </label>
                     <label for = "radio"> 
-                        <input id = "ham" type = "radio" name = "radio"><span class = "radio">HAM</span>
+                        <input id = "ham" type = "radio" name = "radio" value = "HAM"><span class = "radio">HAM</span>
                     </label>
                 </div>
                 <div class = "checkboxes">
                     <p>
                         Check.. some boxes?
                     </p>
-                    <label for = "check"> 
+                    <label for = "check"> ΩΩ
                         <input id = "check" value = "check" type = "checkbox" name = "checkboxes"><span class = "checkbox">Check</span>
                     </label>
                     <label for="box"> 
